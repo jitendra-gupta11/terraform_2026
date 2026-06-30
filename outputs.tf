@@ -10,3 +10,8 @@ output "instance_security_group_ids" {
 output "instance_subnet" {
   value = aws_instance.app_server.subnet_id
 }
+
+output "availability_zones" {
+  value = data.aws_availability_zones.available.names
+}
+
